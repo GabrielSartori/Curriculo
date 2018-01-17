@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\usepackage[T1]{fontenc} % to have good hyphenation
+\usepackage[utf8]{inputenc} % accented characters in input
+\usepackage[portuguese]{babel}
+% \usepackage{amssymb}
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+% \usepackage{url}
+% \usepackage{hyperref}
+\usepackage[lowtilde]{url}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % Fore the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Gabriel} % Yomur first name
+\familyname{Sartori Klostermann} % Your last name
+% All information in this block is optional, comment out any lines you don't need
+\title{\normalfont Estudante de Estatística} 
+\address{Rua Sanito Rocha, 207 - Cristo Rei}
+\mobile{(041) 99920-1734}
+\email{gsartorik@gmail.com}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+% \SweaveOpts{concordance=TRUE}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Formação}
+% \cventry{2011--2015}{B.Tech}{Sri Sai Aditya Institute of Science and Technology}{Surampalem}{\textit{Agg -- 65.00}}{Electrical and Electronics Engineering} 
+\cventry{2010 - 2011}{Senai}{}{Técnico de Informática}{}{}
+\cventry{2012 - Atual}{Estatística}{}{Cursando o 8° Período - Universidade Federal do Paraná}{}{}
+
+%------------------------------------------------
+
+% \subsection{PROJECT}
+% 
+% \cventry{2015}{Foot Step Power Generation by Piezoelectric Material}{Live Project.}{}{}{This is basically a Live Project. The main theme of the project is to generate power by applying pressure on piezoelectric material with the help of non-renewable resources like foot step and other.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiência Profissional}
+
+% A minha primeira experiência profissional foi muito proveitosa, desafiadora e recompensadora. Trabalhar com pessoas não familiares, em um ambiente diferente, ter uma chefia, ponto de entrada, aprimorei a minha comunicação para explicação de propriedades estatísticas para um público não estatístico, se portar em reuniões formais, conhecer as diferenças entre a capacidade estatística e as demandas do projeto, como as pessoas de outras áreas enxergam e avaliam a estatística (Isso é grego, Somar com Letras (Regressão), desconhecimento do potencial dos métodos descritivos (Tabelas, Mapas e Gráficos), quais os softwares usados e valorizados por estatísticos e não estatísticos. 
+
+% Mais detalhes do chefe do chefe
+% o chefe de uma equipe técnica, ter uma visão abrangente da capacidade dos métodos, recursos e limites, é importante quais os softwares e ferramentes necessárias para entregar um produto ou um relatório. (saber demandar)
+ 
+\cvitem{2016/Set - Atualmente}{Estágio no Ministério Público do Paraná - Núcleo de Inteligência}
+\subsection{Projetos}
+
+% O que eu aprendi de estatístico, desenvolvi pessoalmente e o que difere da graduação:
+
+% As técnicas estatísticas aplicadas foram em análise multivariada, análise de correespondência múltipla e o algoritmo a priori, que cria regras de associação, a última técnica não é ensinada na graduação. O meu papel foi compreender os métodos e utilizar para o novo estudo, que trata todo o estado do Paraná.
+
+\vspace{0.25cm}
+\cventry{}{Fraude em Licitação}{}{}{}{Estudo piloto na cidade de Araucária, que identifica os principais grupos de empresas e principais variáveis do processo que possam antecipar uma licitação fraudelenta. Projeto em expansão para o estado do Paraná.}
+
+% Foi o projeto que eu mais atuei, participei das reuniões inicias, que contextualizaram e motivaram o estudo. 
+% A primeira parte foi finalizaada, que consistia em criar um aplicativo de consulta, rankeamento das bacias hidrográficas e da estações de monitoramento. As técnicas aplicadas foram estatística descritiva e espacial. O grande salto de desenvolvimento foi construir esta plataforma, sistematizando as informações de interesse. Foi tudo desenvolvido pelo software R, e tivemos um apoio de TI para colocar no servidor o aplicativo.
+
+\vspace{0.25cm}
+\cventry{}{Índice de Qualidade da Água}{}{}{}{Acompanhamento e avaliação da qualidade da água nas estações de responsabilidade do Paraná. O estudo abrangeu indicadores de diagnóstico, nas estações de monitoramento, bacias hidrográficas e elaboração de mapas temáticos. Por meio da linguagem R foi desenvolvido um aplicativo para organização e visualização destas informações, os resultados preliminares estão disponíveis em: (https://gsartorik.shinyapps.io/iqa-mp/)}
+
+% Projeto já finalizado e realizado a partir de discussões, entre os 3 estatístico do ministério público, para protocolar um guia de boas práticas. Não houve técnica estatística aplicada, o grande desenvolvimento foi organizar a estrutura de um projeto estatístico. Trabalhei com pessoas formadas, com mais de 5 anos de experiência profissional, trocar experiências na elaboração de um método de trabalho, organizar as etapas de macro tarefas e dentro destas, as micros tarefas, (Contextualização, Coleta, Tratamento de Dados, Metodologia (Descritva e modelo), Validação e Apresentação).
+
+\vspace{0.25cm}
+\cventry{}{Práticas em Estatística}{}{}{}{Formalizar os procedimentos e técnicas de resolução nos projetos direcionados a área da Estatística. O guia foi contruído levando em consideração desde as etapas iniciais como a elaboração do plano de projeto até a apresentação dos resultados.}
+
+%----------------------------------------------------------------------------------------
+%	Atividades Formativas 
+%----------------------------------------------------------------------------------------
+
+\section{Atividades Formativas}
+
+\cventry{2013/Fev-Jul}{Monitoria}{}{Voluntário de Estatística II}{}{}
+\cventry{2013/Set-Dez}{LEA}{}{Voluntário no Laboratório de Estatística Aplicada}{}{}
+\cventry{2013/Maio - 2016/Agosto}{PET}{}{Bolsista do Programa de Educação Tutorial de Estatística }{}{}
+% (http://www.pet.est.ufpr.br/?p=1170)
+\subsection{Projetos}
+
+% Primeiro trabalho estatístico de grande porte, fora da graduação. Participação desde os momento iniciais da formulação do problema até a entrega dos resultados. Foi um aprendizado grandioso, trabalhei com meus colegas do curso e profesores, primeiro contato com pesquisadores, assim, tive que apresentar os resultados parcias e finais, para um público leigo. 
+
+
+\vspace{0.25cm}
+\cventry{}{Hanseníase Paraná}{}{2014/Agosto - 2015/Julho}{}{Projeto desenvolvido em conjunto com a SESA (Secretaria de Saúde do Paraná), com o objetivo de desenvolver relatórios dos indicadores da hanseníase no Paraná e em todos os seus 399 municípios. \\
+O resultado está disponível em: http://www.leg.ufpr.br/\texttildelow{paulojus/hanseniase/}}
+
+% \urldef\mysite\url{http://www2.aku.edu.tr/~bkarpuz}}
+
+\vspace{0.25cm}
+
+
+% O Stats-Game, foi um desafio! Como passar as principais ideias da utilidade da profissão, os problemas e conceitos que serão estudados em 5 anos, para um público de ensino médio. E ainda mais, desmitificar a perguntas mais frequente no stando do curso: O que faz um estatístico. Criamos jogos, que trazem a ideia, analisar associação entre variáveis, predição, comparação entre o o bservado e o esperado e aleatoriedade.
+% A receptividade dos professores e do publico foi recompensador!
+\cventry{}{Stats Game}{}{2015}{}{Auxiliar a explicação de conceitos básicos de Estatística de forma interativa para estudantes de Ensino Médio. Utilizado em 2015 no stand do curso de Estatística durante a 13° feira de cursos e profissões da UFPR.\\
+O resultado está disponível em: (http://shiny.leg.ufpr.br/eduardo/feira2015/)} 
+
+\vspace{0.25cm}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Software e Linguagens de Programação}
+
+\cvitem{Avançado}{Linguagem de Programação R}
+\cvitem{Intermediário}{Relatórios Dinâmicos RMarkDown}
+\cvitem{Intermediário}{Pacote Office (Word, Excel, PowerPoint)}
+\cvitem{Intermediário}{Apresentações em LaTeX}
+\cvitem{Básico}{Sistema de Versionamento GIT}
+\cvitem{Básico}{Linguagens de Marcação - HTML e CSS}
+
+%----------------------------------------------------------------------------------------
+%	Línguas
+%----------------------------------------------------------------------------------------
+
+\section{Línguas}
+\cvitemwithcomment{Intermediário}{Inglês}{}
+
+\section{Eventos de Estatística}
+
+\cvitemwithcomment{2017}{Semana Acadêmica (Curitiba)} {Participação}
+\cvitemwithcomment{2016}{XXII Sinape (Porto Alegre)} {Apresentação Poster}
+\cvitemwithcomment{2015}{60º ISI (Rio de Janeiro)} {Participação}
+\cvitemwithcomment{2015}{60º Rbras (Presidente Prudente)} {Participação}
+\cvitemwithcomment{2014}{Semana Acadêmica (Maringá)} {Apresentação Poster}
+\cvitemwithcomment{2014}{XXI Sinape (Natal - RN)} {Participação}
+\cvitemwithcomment{2013}{II Conest (Curitiba)} {Participação}
+\cvitemwithcomment{2012}{I Conest (Curitiba)} {Participação}
+
+\section{Prêmio}
+\cvitemwithcomment{2017}{BlueHack Curitiba - Análise de Dados em Saúde}{1ºLugar}
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Interesse}
+% % \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+% \cvlistdoubleitem{Áprendizado de Máquina}{}
+% \cvlistdoubleitem{Mineração de Texto}
+% \cvlistdoubleitem{Visualização de Dados} {Visuzalização Temática de Mapas}
+% % \cvlistitem{Cricket}
+
+% 
+% \section{Informações Pessoais}
+% % 
+% \cvitem{}{Brasileiro}
+% \cvitem{}{22 anos}
+
+% \cvitem{Mobile No.}{+91 9492390759}
+% \section{References}
+% \cvitem{Name}{K.Harish}
+% \cvitem{Designation}{Senior Software Engineer}
+% \cvitem{Organisation}{Happiest Minds-Bangalore}
+% \cvitem{Ph No}{8105543434}
+% \cvitem{Mai}{harish.kmail@gmail.com}
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
