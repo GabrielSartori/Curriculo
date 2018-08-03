@@ -23,65 +23,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-\let\hlipl\hlkwb
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \usepackage[T1]{fontenc} % to have good hyphenation
 \usepackage[utf8]{inputenc} % accented characters in input
 \usepackage[portuguese]{babel}
-\usepackage{hyperref}
+
 % \usepackage{amssymb}
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{red} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
@@ -90,6 +40,14 @@
 \usepackage[lowtilde]{url}
 \usepackage{textcomp}
 \usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % Fore the 'classic' style, uncomment to adjust the width of the space allocated to your name
@@ -101,13 +59,18 @@
 \firstname{Gabriel} % Yomur first name
 \familyname{Sartori Klostermann} % Your last name
 % All information in this block is optional, comment out any lines you don't need
-\title{\normalfont Estudante de Estatística} 
-\address{Rua Sanito Rocha, 207 - Cristo Rei}
+\title{\normalfont Cientista de Dados} 
+\address{Cristo Rei, Curitiba - PR}
 \mobile{(041) 99920-1734}
 \email{gsartorik@gmail.com}
+\social[linkedin]{gabriel-sartori}
+\social[github]{GabrielSartori}
+\extrainfo{23 anos}
+\extrainfo{Atualizado 26/07/2018}
+
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %----------------------------------------------------------------------------------------
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
 \begin{document}
 % \SweaveOpts{concordance=TRUE}
 
@@ -119,10 +82,13 @@
 
 \section{Formação}
 % \cventry{2011--2015}{B.Tech}{Sri Sai Aditya Institute of Science and Technology}{Surampalem}{\textit{Agg -- 65.00}}{Electrical and Electronics Engineering} 
+\cventry{2012 - 2018}{Graduação Estatística}{}{Universidade Federal do Paraná}{}{}
 \cventry{2010 - 2011}{Senai}{}{Técnico de Informática}{}{}
-\cventry{2012 - Atual}{Estatística}{}{Cursando o 9° Período - Universidade Federal do Paraná}{}{}
 
 %------------------------------------------------
+
+
+% \section{Resumo Profissional}
 
 % \subsection{PROJECT}
 % 
@@ -139,7 +105,7 @@
 % Mais detalhes do chefe do chefe
 % o chefe de uma equipe técnica, ter uma visão abrangente da capacidade dos métodos, recursos e limites, é importante quais os softwares e ferramentes necessárias para entregar um produto ou um relatório. (saber demandar)
  
-\cvitem{2016/Set - Atualmente}{Estágio no Ministério Público do Paraná - Núcleo de Inteligência}
+\cvitem{2016/Set - 2018/Jun}{Estágio no Ministério Público do Paraná - Núcleo de Inteligência}
 \subsection{Projetos}
 
 % O que eu aprendi de estatístico, desenvolvi pessoalmente e o que difere da graduação:
@@ -153,31 +119,28 @@
 % A primeira parte foi finalizaada, que consistia em criar um aplicativo de consulta, rankeamento das bacias hidrográficas e da estações de monitoramento. As técnicas aplicadas foram estatística descritiva e espacial. O grande salto de desenvolvimento foi construir esta plataforma, sistematizando as informações de interesse. Foi tudo desenvolvido pelo software R, e tivemos um apoio de TI para colocar no servidor o aplicativo.
 
 \vspace{0.25cm}
-\cventry{}{Índice de Qualidade da Água}{}{}{}{Acompanhamento e avaliação da qualidade da água nas estações de responsabilidade do Paraná. O estudo abrangeu indicadores de diagnóstico, nas estações de monitoramento, bacias hidrográficas e elaboração de mapas temáticos. Por meio da linguagem R foi desenvolvido um aplicativo para organização e visualização destas informações, os resultados preliminares estão disponíveis em: \href{https://gsartorik.shinyapps.io/iqa-mp/}{https://gsartorik.shinyapps.io/iqa-mp/}}
+\cventry{}{Índice de Qualidade da Água}{}{}{}{Acompanhamento e avaliação da qualidade da água nas estações de responsabilidade do Paraná. O estudo abrangeu indicadores de diagnóstico, nas estações de monitoramento, bacias hidrográficas e elaboração de mapas temáticos. Os resultados preliminares estão disponíveis em: \href{https://gsartorik.shinyapps.io/iqa-mp/}{https://gsartorik.shinyapps.io/iqa-mp/}}
 
 % Projeto já finalizado e realizado a partir de discussões, entre os 3 estatístico do ministério público, para protocolar um guia de boas práticas. Não houve técnica estatística aplicada, o grande desenvolvimento foi organizar a estrutura de um projeto estatístico. Trabalhei com pessoas formadas, com mais de 5 anos de experiência profissional, trocar experiências na elaboração de um método de trabalho, organizar as etapas de macro tarefas e dentro destas, as micros tarefas, (Contextualização, Coleta, Tratamento de Dados, Metodologia (Descritva e modelo), Validação e Apresentação).
 
 \vspace{0.25cm}
-\cventry{}{Práticas em Estatística}{}{}{}{Formalizar os procedimentos e técnicas de resolução nos projetos direcionados a área da Estatística. O guia foi contruído levando em consideração desde as etapas iniciais como a elaboração do plano de projeto até a apresentação dos resultados.}
+\cventry{}{Práticas em Estatística}{}{}{}{Formalizar os procedimentos e técnicas de resolução nos projetos direcionados a área da Estatística. O guia foi contruído levando em consideração, desde as etapas iniciais como a elaboração do plano de projeto até as apresentações dos resultados.}
 
 %----------------------------------------------------------------------------------------
 %	Atividades Formativas 
 %----------------------------------------------------------------------------------------
 
 \section{Atividades Formativas}
-
-\cventry{2013/Fev-Jul}{Monitoria}{}{Voluntário de Estatística II}{}{}
-\cventry{2013/Set-Dez}{LEA}{}{Voluntário no Laboratório de Estatística Aplicada}{}{}
 \cventry{2013/Maio - 2016/Agosto}{PET}{}{Bolsista do Programa de Educação Tutorial de Estatística }{}{}
 % (http://www.pet.est.ufpr.br/?p=1170)
 \subsection{Projetos}
 
 % Primeiro trabalho estatístico de grande porte, fora da graduação. Participação desde os momento iniciais da formulação do problema até a entrega dos resultados. Foi um aprendizado grandioso, trabalhei com meus colegas do curso e profesores, primeiro contato com pesquisadores, assim, tive que apresentar os resultados parcias e finais, para um público leigo. 
 
-
 \vspace{0.25cm}
 \cventry{}{Hanseníase Paraná}{}{2014/Agosto - 2015/Julho}{}{Projeto desenvolvido em conjunto com a SESA (Secretaria de Saúde do Paraná), com o objetivo de desenvolver relatórios dos indicadores da hanseníase no Paraná e em todos os seus 399 municípios. \\
-O resultado está disponível em: \href{http://www.leg.ufpr.br/~paulojus/hanseniase/}{http://www.leg.ufpr.br/\texttildelow{paulojus/hanseniase/}}}
+O resultado está disponível em: 
+\href{http://www.leg.ufpr.br/~paulojus/hanseniase/}{http://www.leg.ufpr.br/\texttildelow{paulojus/hanseniase/}}}
 
 % \urldef\mysite\url{http://www2.aku.edu.tr/~bkarpuz}}
 
@@ -191,6 +154,11 @@ O resultado está disponível em: \href{http://shiny.leg.ufpr.br/eduardo/feira20
 
 \vspace{0.25cm}
 
+\cventry{2013/Set-Dez}{LEA}{}{Voluntário no Laboratório de Estatística Aplicada}{}{}
+\cventry{2013/Fev-Jul}{Monitoria}{}{Voluntário de Estatística II}{}{}
+
+
+
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
@@ -200,9 +168,10 @@ O resultado está disponível em: \href{http://shiny.leg.ufpr.br/eduardo/feira20
 \cvitem{Avançado}{Linguagem de Programação R}
 \cvitem{Intermediário}{Relatórios Dinâmicos RMarkDown}
 \cvitem{Intermediário}{Pacote Office (Word, Excel, PowerPoint)}
-\cvitem{Intermediário}{Elaboração de Documentos em LaTeX}
-\cvitem{Básico}{Sistema de Versionamento GIT}
+\cvitem{Intermediário}{Apresentações em LaTeX}
+\cvitem{Intermediário}{Sistema de Versionamento GIT}
 \cvitem{Básico}{Linguagens de Marcação - HTML e CSS}
+\cvitem{Básico}{MongoDB}
 
 %----------------------------------------------------------------------------------------
 %	Línguas
@@ -213,17 +182,21 @@ O resultado está disponível em: \href{http://shiny.leg.ufpr.br/eduardo/feira20
 
 \section{Eventos de Estatística}
 
+\cvitemwithcomment{2018}{\href{https://github.com/GabrielSartori/precificacao_imoveis}{Meetup Data Science}}{Precificação de Imóveis}
+\cvitemwithcomment{2018}{63º Rbras (Curitiba)} {Poster}
+\cvitemwithcomment{2018}{\href{http://rday.leg.ufpr.br/materiais.html}{Rday (Curitiba)}}{Mapas Interativos}
 \cvitemwithcomment{2017}{Semana Acadêmica (Curitiba)} {Participação}
-\cvitemwithcomment{2016}{XXII Sinape (Porto Alegre)} {Apresentação Poster}
+\cvitemwithcomment{2016}{XXII Sinape (Porto Alegre)} {Poster}
 \cvitemwithcomment{2015}{60º ISI (Rio de Janeiro)} {Participação}
 \cvitemwithcomment{2015}{60º Rbras (Presidente Prudente)} {Participação}
-\cvitemwithcomment{2014}{Semana Acadêmica (Maringá)} {Apresentação Poster}
+\cvitemwithcomment{2014}{Semana Acadêmica (Maringá)} {Poster}
 \cvitemwithcomment{2014}{XXI Sinape (Natal - RN)} {Participação}
 \cvitemwithcomment{2013}{II Conest (Curitiba)} {Participação}
 \cvitemwithcomment{2012}{I Conest (Curitiba)} {Participação}
 
 \section{Prêmio}
-\cvitemwithcomment{2017}{BlueHack Curitiba - Análise de Dados em Saúde}{1ºLugar}
+\cvitemwithcomment{2018}{\href{https://github.com/leg-ufpr/hackathon/blob/master/README.md}{Hackathon de Data Science}}{1ºLugar}
+\cvitemwithcomment{2017}{\href{http://portalfns.saude.gov.br/ultimas-noticias/1866-projeto-para-monitoramento-de-doencas-vence-maratona}{BlueHack Curitiba - Análise de Dados em Saúde}}{1ºLugar}
 
 
 
