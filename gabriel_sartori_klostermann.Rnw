@@ -73,6 +73,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 % \SweaveOpts{concordance=TRUE}
 
 \makecvtitle % Print the CV title
