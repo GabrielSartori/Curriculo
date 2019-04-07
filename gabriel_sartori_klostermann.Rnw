@@ -170,14 +170,14 @@ O resultado está disponível em: \href{http://shiny.leg.ufpr.br/eduardo/feira20
 \section{Software e Linguagens de Programação}
 
 \cvitem{Avançado}{Linguagem de Programação R}
-\cvitem{Intermediário}{Relatórios Dinâmicos RMarkDown}
-\cvitem{Intermediário}{Pacote Office (Word, Excel, PowerPoint)}
-\cvitem{Intermediário}{Apresentações em LaTeX}
+\cvitem{Avançado}{RMarkDown}
+\cvitem{Intermediário}{MongoDB}
+\cvitem{Intermediário}{SQL}
+\cvitem{Intermediário}{Linguagens de Marcação - HTML e CSS}
 \cvitem{Intermediário}{Sistema de Versionamento GIT}
-\cvitem{Básico}{MongoDB}
-\cvitem{Básico}{SQL}
-\cvitem{Básico}{Linguagens de Marcação - HTML e CSS}
-
+\cvitem{Intermediário}{LaTeX}
+\cvitem{Intermediário}{Pacote Office (Word, Excel, PowerPoint)}
+\cvitem{Básico}{Elastic Search}
 
 %----------------------------------------------------------------------------------------
 %	Línguas
