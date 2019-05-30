@@ -73,7 +73,6 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 % \SweaveOpts{concordance=TRUE}
 
 \makecvtitle % Print the CV title
@@ -115,7 +114,7 @@
 \vspace{0.25cm}
 \cventry{}{Favorabilidade Residencial}{}{}{}{Criação de indicadores que facilitam a definição do empreendimento imobiliário. Os indicadores buscam precificar, definir público alvo e avaliar a demanda do mercado.}
 
-\cventry{}{Score de Anúncios}{}{}{}{Definição da metodologia de score em anúncios imobiliários. Os anúncios no site, precisam ser validado tanto com critérios de negócio e análise estatística para identificar anomalias.}
+\cventry{}{Score de Anúncios}{}{}{}{Os anúncios de imóveis na web, podem apresenetar atributos incoerentes de acordo com a característica do imóvel.  Sendo necessário uma tratativa de validação na extração desses dados por meio de regras de negócio e análise estatística.}
  
 \cvitem{2016/Set - 2018/Jun}{Estágio no Ministério Público do Paraná - Núcleo de Inteligência}
 \subsection{Projetos}
