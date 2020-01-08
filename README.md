@@ -1,1 +1,0 @@
-Meu Currículo, atualizado 09/04/2019
